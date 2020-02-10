@@ -13,9 +13,11 @@ class PrintNumber2{
         int[] sosuu = new int[500];
         sosuu[ptr] = 2;
         ptr++;
+        sosuu[ptr] = 3;
+        ptr++;
         // System.out.println(sosuu);
         //System.out.println(sosuu[0]);
-        for(int n=2; n <= 15; n++){
+        for(int n=3; n <= 1000; n+=2){
 
             System.out.println("top_sosuu[ptr]:"+sosuu[ptr-1]);
 
@@ -38,9 +40,10 @@ class PrintNumber2{
                 continue;
             }
 
-            System.out.println("sossu_kamo:"+n); 
+            System.out.println("sossu_kamo:"+n);
+            int lastSossu = sosuu[ptr-1];
             
-            for(int j = 2;j <= n; j++){
+            for(int j = lastSossu;j <= n; j+=2){
                 
 
                 // System.out.println("i="+i);    
